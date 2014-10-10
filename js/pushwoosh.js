@@ -93,7 +93,9 @@ document.addEventListener("deviceready", function(){
 
         function unregisterDevice() {
             document.removeEventListener('push-notification', onPushHappen);
-            
+            alert('before unregister device');
+            alert(pushNotification);
+            alert(pushNotification.unregisterDevice);
             pushNotification.unregisterDevice(function(status) {
                 alert(status);
             }, function(error) {
@@ -116,7 +118,6 @@ document.addEventListener("deviceready", function(){
     
     
     app.PushWoosh.init();
-    app.init();
     
     
 }, true);
