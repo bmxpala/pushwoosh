@@ -13,7 +13,9 @@ document.addEventListener("deviceready", function(){
             pushNotification.onDeviceReady();
         }
         
-        
+        alert(pushNotification);
+        alert(pushNotification.registerDevice);
+        alert(pushNotification.unregisterDevice);
         function registerDevice() {
             alert('before registering device');
             alert(pushNotification);
