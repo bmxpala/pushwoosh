@@ -1,5 +1,12 @@
-document.addEventListener("deviceready", function(){
-    alert('device ready');
-    alert(window.plugins.pushNotification);
-    alert(window.plugins);
-}, true);
+var app = {
+    $(document).ready(function() {
+        $('#subscibe').click(function() {
+            app.PushWoosh.registerDevice();
+        });
+
+        $('#unsubscibe').click(function() {
+            app.PushWoosh.unregisterDevice();
+        });
+    })
+    
+};
