@@ -116,6 +116,7 @@ document.addEventListener("deviceready", function(){
     
     
     app.PushWoosh.init();
+    app.init();
     
     
 }, true);
