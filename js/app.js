@@ -1,12 +1,11 @@
-var app = {
-    $(document).ready(function() {
-        $('#subscibe').click(function() {
-            app.PushWoosh.registerDevice();
-        });
+var app = {};
 
-        $('#unsubscibe').click(function() {
-            app.PushWoosh.unregisterDevice();
-        });
-    })
-    
-};
+$(document).ready(function() {
+    $('#subscribe').click(function() {
+        app.PushWoosh.registerDevice();
+    });
+
+    $('#unsubscribe').click(function() {
+        app.PushWoosh.unregisterDevice();
+    });
+})
